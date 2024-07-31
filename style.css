@@ -40,6 +40,13 @@ main {
 	background-color: var(--clr-neutral-700);
 }
 
+@media (max-width: 500px) {
+	.advice-card {
+		gap: 1rem;
+		padding: 3rem 1rem;
+	}
+}
+
 .advice__number {
 	color: var(--clr-primary-green);
 	font-size: 0.75rem;
