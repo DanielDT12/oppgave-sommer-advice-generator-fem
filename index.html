@@ -18,5 +18,26 @@
 		/>
 		<title>Frontend Mentor | Advice Generator</title>
 	</head>
-	<body></body>
+	<body>
+		<main>
+			<div class="advice-card">
+				<h1 class="advice__number" id="js-advice-number"></h1>
+				<p class="advice__text" id="js-advice-text"></p>
+				<picture class="decorative-divider">
+					<source
+						media="(max-widht:500px)"
+						srcset="./images/pattern-divider-mobile.svg"
+					/>
+					<img src="./images/pattern-divider-desktop.svg" alt="" />
+				</picture>
+				<button class="advice__button">
+					<img
+						class="dice-img"
+						src="./images/icon-dice.svg"
+						alt="Dice button for new adivce"
+					/>
+				</button>
+			</div>
+		</main>
+	</body>
 </html>
