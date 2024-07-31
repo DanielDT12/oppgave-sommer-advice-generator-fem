@@ -17,7 +17,11 @@ function displayAdvice(adviceData) {
 	const adviceText = document.querySelector("#js-advice-text");
 
 	adviceNumber.textContent = `Advice #${adviceData.slip.id}`;
-	adviceText.textContent = adviceData.slip.advice;
+	adviceText.textContent = `"${adviceData.slip.advice}"`;
 }
 
 getAdvice();
+
+const adviceButton = document.querySelector("#js-advice-button");
+
+adviceButton.addEventListener("click", getAdvice);
